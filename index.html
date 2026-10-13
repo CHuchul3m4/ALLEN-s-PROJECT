@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff00cc">
+
+  <title>♡ Te queremos Len Len ♡</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Primero se carga la librería de Supabase -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
+    defer
+  ></script>
+
+  <!-- Después se carga tu JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- PANTALLA DE BIENVENIDA -->
+  <div id="pantallaEntrada">
+    <div class="sobre">💌</div>
+    <h1>♡ Cartitas para Allen  ♡</h1>
+    <p>Hicimos algo especial para ti...</p>
+    <button id="abrirCarta" type="button">💗 Abrir mi cartita ♡</button>
+    <span class="decoracion">♡ ✧ ⋆｡˚ ❀ ˚｡⋆ ✧ ♡</span>
+  </div>
+
+  <!-- MÚSICA -->
+   
+  <audio id="musica" loop preload="auto">
+    <source src="Cumpleaños.mp3" type="audio/mpeg">
+    Tu navegador no puede reproducir este audio.
+  </audio>
+
+  <button id="musicBtn" type="button" hidden>
+    🎵 Iniciar música
+  </button>
+
+
+  <main class="wrapper" id="top">
+    <span class="star star-one">★</span>
+    <span class="star star-two">✦</span>
+    <span class="star star-three">★</span>
+    <span class="star star-four">✧</span>
+
+    <header class="site-header">
+      <p class="eyebrow">✿ una pequeña pagina hecha con amor ✿</p>
+      <h1>FELIZ<br>CUMPLEAÑOS !!!</h1>
+      <div class="subtitle">♡ CARTITAS PARA UNA PERSONA MUY ESPECIAL ♡</div>
+      <div class="ticker" aria-label="Mensaje de cumpleaños">
+        <span>★★★ FELICES 18 ALLEN !!! ★★★　✿ :3 ✿　★★★ TE QUEREMOS MUCHO ★★★ YA ERES LEGAL AHORA　</span>
+      </div>
+      <p class="intro">Un montón de palabras bonitas de las personas que te quieren. Sientete libre de checar cada una de ellas, toma tu tiempo y disfruta cada cartita. ♡</p>
+
+      <nav class="quick-nav" aria-label="Ir a una carta">
+        <a href="#Gomez">Gomez</a>
+        <a href="#Damian">Damian</a>
+        <a href="#Santander">Santander</a>
+
+      </nav>
+    </header>
+    
+<!-- FORMULARIO PARA CARTITAS ANÓNIMAS -->
+<section class="formulario-cartitas" aria-labelledby="titulo-formulario">
+  <h2 id="titulo-formulario">♡ Deja tu cartita ♡</h2>
+  <p>Escribe algo bonito para Len 💌</p>
+
+  <form id="formCartita">
+    <label for="mensajeCartita">Tu mensaje anónimo</label>
+
+    <textarea
+      id="mensajeCartita"
+      name="mensaje"
+      placeholder="Escribe aquí tu cartita..."
+      minlength="1"
+      maxlength="1000"
+      required
+    ></textarea>
+
+    <p class="contador">
+      Máximo 1000 caracteres.
+    </p>
+
+    <button type="submit" id="btnPublicar">
+      💗 Enviar cartita
+    </button>
+
+    <p id="estadoCartita" role="status" aria-live="polite"></p>
+    </form>
+    </section>
+
+    <section class="letter-grid" aria-label="Cartitas de cumpleaños">
+
+      <!-- 01 GOMEZ -->
+      <article class="carta" id="Gomez">
+        <div class="card-top"><span>✦ CARTITA ✦</span><span class="card-number">01</span></div>
+        <h2>♡ GOMEZ ♡</h2>
+        <div class="sticker sticker-pink">FELIZ<br>CUMPLE!!!</div>
+        <div class="message">
+          <p>Feliz cumpleaños len la verdad es que me tarde un poco en felicitarte porque queria hacer algo especial para ti. Se que no somos muy amigos realmente pero para mi siempre fuiste una persona muy importante en mi vida, como
+            ya te habia contado antes, al principio no me agradabas mucho pero me di cuenta con el tiempo que eras una persona muy sabia y especial, y la verdad es un privilegio tenerte como amigo . La mayoria de cosas que me gustan ahora
+            vienen de tu influencia indirecta y la verdad es algo que me hace sentir agradecido , en secreto siempre te admire por tu forma de ser y porque eres un recordatorio de lo que podria llegar a ser si me esfrozara un poquito mas 
+            te quiero len feliz cumpleaños y espero que cumplas muchos mas y que la vida te de todo lo que mereces y mas. Y ya tienes que pagar impuestos ya eres viejo we jjajaja agarrrar pala 👀👀
+          </p>
+        </div>
+        <div class="card-footer">♡ con mucho cariño :3 ♡</div>
+        
+        <div class="recuerdo">
+          <img src="fotos/kaito.png" alt="kait">
+          <p>♡ FELIZ CUMPLEEE!!! ♡</p>
+        </div>
+
+      </article>
+
+      <!-- 02 DAMIAN -->
+      <article class="carta" id="Damian">
+        <div class="card-top"><span>✦ CARTITA ✦</span><span class="card-number">02</span></div>
+        <h2>♡ DAMIAN ♡</h2>
+        <div class="message">
+          <p> Feliz cumpleaños, espero que la podes chido, y que las cosas salgan bien el día de hoy, que sigas cumpliendo más y que llegues muy lejos✨🤗</p>
+        </div>
+        <div class="sticker sticker-green">Feliz <br>>Cumple</div>
+        <div class="card-footer">♡ Ninguna persona fue obligada a escribir esta carta 👀 ♡</div>
+        
+        <div class="recuerdo">
+          <img src="fotos/jax.gif" alt="jaxxy">
+        </div>
+
+      </article>
+      <article> 
+        
+    <div class="video-recuerdo">
+      <p>♡ videoito de conejitos para alegrarte el dia ♡</p>
+      <video controls playsinline preload="metadata">
+        <source src="videos/conejitos.mp4" type="video/mp4">
+        Tu navegador no puede reproducir este video.
+      </video>
+    </div>
+
+      </article>
+      <!-- 03 SANTANDER -->
+      <article class="carta" id="Santander">
+        <div class="card-top"><span>✦ CARTITA ✦</span><span class="card-number">03</span></div>
+        <h2>♡ SANTANDER ♡</h2>
+        <div class="message">
+          <p>Que te la pase chido en este día , pásala increíble,atascate de pastel,dulces y de todas las golosinas 🥺,y no te olvides de tus amigos</p>
+        </div>
+        <div class="card-footer">✿ QUEREMOS PASTEL PASTEL PASTEL!! ✿</div>
+                <div class="recuerdo">
+          <img src="fotos/gato pastel.jfif" alt="gato pastel">
+          <p>♡ PASTEL PASTEL PASTEL ♡</p>
+        </div>
+      </article>
+
+      
+
+    </section>
+
+    <div class="rainbow-bar" aria-hidden="true">★ ☆ ★ ☆ ★ ☆ ★ ☆ ★ ☆ ★</div>
+    
+    <!-- CARTITAS ENVIADAS POR LOS VISITANTES -->
+    <section
+      id="seccionCartitasPublicadas"
+      aria-label="Cartitas enviadas por los visitantes"
+    >
+      <h2>♡ Cartitas Anonimas para Allen ♡</h2>
+      <div id="cartitasPublicadas" class="letter-grid"></div>
+    </section>
+
+
+    <footer class="footer">
+      <p>♡ Hecho con amor y un poquito de HTML ♡</p>
+      <p class="tiny">(c) 2026 — ALLEN'S PROJECT-CAMOTE TEAM SOFTWARE — "un recuerdo para guardar"</p>
+      <a class="back-top" href="#top">↑ VOLVER ARRIBA ↑</a>
+    </footer>
+  </main>
+
+</body>
+</html>
